@@ -5,12 +5,12 @@ import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Products from "./Pages/Products";
 import Card from "./Pages/Card";
+import LoginSignup from "./Pages/LoginSignup";
 
 function App() {
   return (
     <BrowserRouter>
       {" "}
-      {/* Wrap your entire application with BrowserRouter */}
       <div>
         <Navbar />
       </div>
@@ -23,8 +23,7 @@ function App() {
           {/* <Route path="/:productId" element={<Products />} /> */}
         </Route>
         <Route path="/card" element={<Card />} />
-        {/* Ensure the loginSignup component is imported and defined */}
-        {/* <Route path="/login" element={<loginSignup />} /> */}
+        <Route path="/login" element={<LoginSignup />} />
       </Routes>
     </BrowserRouter>
   );

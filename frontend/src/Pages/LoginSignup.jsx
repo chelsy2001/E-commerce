@@ -1,4 +1,5 @@
 import React from 'react'
+import './CSS/LoginSignup.css'
 
 function LoginSignup() {
   return (
@@ -13,8 +14,10 @@ function LoginSignup() {
           <input type='password' placeholder='Password'></input>
         </div>
         <button>Continue</button>
-        <p className='loginsignup-login'>Already have an account</p>
+        <p className='loginsignup-login'>Already have an account ? <span>Login here</span></p>
         <div className='loginsignup-agree'>
+          <input type='checkbox' name='' id=''/>
+          <p>By continuing , iagree to the terms of use & privacy policy</p>
         </div>
       </div>
     </div>

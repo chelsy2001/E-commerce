@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import CartItems from '../Components/CartItems/CartItems';
 
-function Card() {
+const Card = () => {
   return (
-    <div>Card</div>
+    <CartItems />
   )
 }
 

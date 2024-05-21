@@ -96,7 +96,6 @@ import upload_area from '../../assets/upload_area.svg';
 
 const AddProduct = () => {
     const [image, setImage] = useState(false);
-
     const [productDetails, setProductDetails] = useState({
         name: "",
         image: "",
@@ -114,14 +113,13 @@ const AddProduct = () => {
     }
 
     const Add_product = async () => {
-        console.log(productDetails);
-        let responseDate;
-        let product = productDetails;
-
-        let formData = new FormData();
-        formData.append('product', image);
-
         try {
+            let responseDate;
+            let product = productDetails;
+
+            let formData = new FormData();
+            formData.append('product', image);
+
             const uploadResponse = await fetch('http://localhost:4000/upload', {
                 method: 'POST',
                 headers: {
@@ -188,4 +186,5 @@ const AddProduct = () => {
 }
 
 export default AddProduct;
+
 
